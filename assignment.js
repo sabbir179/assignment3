@@ -46,11 +46,9 @@ function brickCalculator(floor){
         var feet2 = floor * 10;
         var countBrick2 = feet2 * 1000;
         var totalBrick = countBrick + countBrick1 + countBrick2;
-    
-    
-}
+    }
 return totalBrick;
-
+}
 
 
 
