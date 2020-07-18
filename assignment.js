@@ -32,6 +32,7 @@ console.log("Total number of wood need: " + total + " cubic feet");
 // per ft needs 1000 bricks.
 
 function brickCalculator(floor){
+    var countBrick = 0;
     if (floor <=10){
          countBrick = floor * 15 * 1000;
         
@@ -53,7 +54,8 @@ function brickCalculator(floor){
   return countBrick;
 }
 
-
+var count = brickCalculator(34);
+console.log("Total number of brick need: ", count, " pcs")
 
 
 
