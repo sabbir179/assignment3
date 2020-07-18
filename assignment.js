@@ -33,22 +33,29 @@ console.log("Total number of wood need: " + total + " cubic feet");
 
 function brickCalculator(floor){
     if (floor <=10){
-        var feet = floor * 15;
-        var countBrick = feet * 1000;
-        var totalBrick = countBrick;
+         countBrick = floor * 15 * 1000;
+        
     }
-    else if( floor > 10 && floor <=20){
-        var feet1 = floor * 12;
-        var countBrick1 = feet1 * 1000;
-        var totalBrick = (10*15*1000) + countBrick1;
+    else if( floor <=20){
+        var firstPart = 10 * 15 * 1000;
+        var remaining = floor - 10;
+        var secondPart = remaining * 12;
+        countBrick = firstPart + secondPart;
+
     }
     else {
-        var feet2 = floor * 10;
-        var countBrick2 = feet2 * 1000;
-        var totalBrick = (10*15*1000) + (10*12*1000) + countBrick2;
+        var firstPart = 10 * 15 * 1000;
+        var secondPart = 10 * 12 * 1000;
+        var remaining = floor - 20;
+        var thirdPart = remaining * 10;
+        countBrick = firstPart + secondPart + thirdPart;
     }
-return totalBrick;
+  return countBrick;
 }
+
+
+
+
 
 
 
