@@ -40,12 +40,12 @@ function brickCalculator(floor){
     else if( floor > 10 && floor <=20){
         var feet1 = floor * 12;
         var countBrick1 = feet1 * 1000;
-        var totalBrick = countBrick + countBrick1;
+        var totalBrick = (10*15*1000) + countBrick1;
     }
     else {
         var feet2 = floor * 10;
         var countBrick2 = feet2 * 1000;
-        var totalBrick = countBrick + countBrick1 + countBrick2;
+        var totalBrick = (10*15*1000) + (10*12*1000) + countBrick2;
     }
 return totalBrick;
 }
